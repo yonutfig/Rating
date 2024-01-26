@@ -1,0 +1,94 @@
+.app { 
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+body {
+    background-image: url(./media/lightgrey.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(96, 95, 95);
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    margin: 0;
+}
+.rating { 
+    background-color: #024059;
+    padding: 60px;
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 350px;
+    border-radius: 10px;
+}
+.submitRate  { 
+    color: white;
+    background-color: orange;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 15px 0;
+}
+
+.rating h3  {
+    font-size: 32px;
+    color:white ;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.rating p {
+    font-size: 16px;
+    color: darkgrey;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.rating .choose { 
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+    user-select: none;
+}
+.rate { 
+        color: rgb(82, 80, 80);
+        padding: 16px 20px;
+        font-weight: bold;
+        font-size: 24px;
+        background-color: white;
+        border-radius: 100%;
+        cursor: pointer;
+        
+}
+.rate.active { 
+    background-color: #05F2DB;
+}
+.ratinf p  {
+    margin-bottom: 0;
+}
+.rating button { 
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background: linear-gradient(45deg,#05F2DB,#024059);
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+* {
+    transition: 0.3s all;
+}
+ .rate:hover { 
+    background-color: #05F2DB;
+ }
+ .rating button:hover { 
+    background-color: rgb(38, 152, 66);;
+ }
+#submitMessage { 
+    font-size: 18px;
+    color: rgb(45, 163, 45);
+    margin: 0 auto;
+    margin-top: 24px;
+    text-transform: uppercase;
+}
